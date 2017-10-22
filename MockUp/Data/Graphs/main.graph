@@ -2,24 +2,24 @@
 	"graph": {
 		"components": [
 			{
-				"ID": "FEA864BB",
+				"ID": "AAC1A63F",
 				"Name": "",
-				"type": "Input_ScanDir",
-				"num_inputs": 3,
-				"num_outputs": 2,
+				"type": "Scene_HandleEvent",
+				"num_inputs": 1,
+				"num_outputs": 1,
 				"preview": true,
 				"enabled": true,
 				"unique_view_name": "MyGraphView",
-				"coordinates": "325 687",
-				"view_size": "261 104",
+				"coordinates": "199 107",
+				"view_size": "142 80",
 				"metadata": null,
 				"input_slots": [
 					{
-						"home_component": "FEA864BB",
+						"home_component": "AAC1A63F",
 						"slot_index": 0,
 						"data_access": 0,
-						"slot_var_label": "P",
-						"slot_label": "Path",
+						"slot_var_label": "E",
+						"slot_label": "EventName",
 						"protected": true,
 						"linked_component": "",
 						"linked_slot_index": -1,
@@ -30,53 +30,7 @@
 									"items": [
 										{
 											"var_type": "String",
-											"var_value": "Data/Demo"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "FEA864BB",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "F",
-						"slot_label": "Filter",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "None",
-											"var_value": ""
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "FEA864BB",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "R",
-						"slot_label": "Recursive",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "None",
-											"var_value": ""
+											"var_value": "AssetPreviewLoad"
 										}
 									]
 								}
@@ -86,755 +40,46 @@
 				],
 				"output_slots": [
 					{
-						"home_component": "FEA864BB",
-						"slot_index": 0,
-						"linked_inputs": []
-					},
-					{
-						"home_component": "FEA864BB",
-						"slot_index": 1,
-						"linked_inputs": []
-					}
-				]
-			},
-			{
-				"ID": "22D3A6BD",
-				"Name": "",
-				"type": "Sets_ListLength",
-				"num_inputs": 1,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "707 595",
-				"view_size": "140 80",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "22D3A6BD",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "D",
-						"slot_label": "DataTree",
-						"protected": true,
-						"linked_component": "32996401",
-						"linked_slot_index": 0
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "22D3A6BD",
+						"home_component": "AAC1A63F",
 						"slot_index": 0,
 						"linked_inputs": [
 							{
-								"linked_component": "9501E2AD",
-								"linked_slot_index": 2
+								"linked_component": "0558FA34",
+								"linked_slot_index": 0
 							}
 						]
 					}
 				]
 			},
 			{
-				"ID": "32996401",
+				"ID": "60D69105",
 				"Name": "",
-				"type": "Maths_RectangularGrid",
-				"num_inputs": 5,
-				"num_outputs": 2,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "374 527",
-				"view_size": "298 148",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "32996401",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "T",
-						"slot_label": "transform",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Matrix3x4",
-											"var_value": "1 0 0 0 0 1 0 0 0 0 1 0"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "32996401",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "NX",
-						"slot_label": "numberX",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Int",
-											"var_value": "7"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "32996401",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "NZ",
-						"slot_label": "numberZ",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Int",
-											"var_value": "7"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "32996401",
-						"slot_index": 3,
-						"data_access": 0,
-						"slot_var_label": "x",
-						"slot_label": "sizeX",
-						"protected": true,
-						"linked_component": "7116B340",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "32996401",
-						"slot_index": 4,
-						"data_access": 0,
-						"slot_var_label": "z",
-						"slot_label": "sizeZ",
-						"protected": true,
-						"linked_component": "7116B340",
-						"linked_slot_index": 0
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "32996401",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "22D3A6BD",
-								"linked_slot_index": 0
-							},
-							{
-								"linked_component": "C02B57B6",
-								"linked_slot_index": 0
-							}
-						]
-					},
-					{
-						"home_component": "32996401",
-						"slot_index": 1,
-						"linked_inputs": []
-					}
-				]
-			},
-			{
-				"ID": "445984F4",
-				"Name": "",
-				"type": "Scene_CloneNode",
+				"type": "Sets_Heap",
 				"num_inputs": 3,
 				"num_outputs": 1,
 				"preview": true,
 				"enabled": true,
 				"unique_view_name": "MyGraphView",
-				"coordinates": "1216 454",
-				"view_size": "132 104",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "445984F4",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "ID",
-						"slot_label": "NodeID",
-						"protected": true,
-						"linked_component": "D8120ABF",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "445984F4",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "T",
-						"slot_label": "Transform",
-						"protected": true,
-						"linked_component": "E163D6BA",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "445984F4",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "P",
-						"slot_label": "ParentID",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "None",
-											"var_value": ""
-										}
-									]
-								}
-							]
-						}
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "445984F4",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "C7EA6D34",
-								"linked_slot_index": 0
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "91336704",
-				"Name": "",
-				"type": "Maths_ConstructTransform",
-				"num_inputs": 3,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "916 651",
-				"view_size": "176 104",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "91336704",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "P",
-						"slot_label": "Position",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Vector3",
-											"var_value": "0 0 0"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "91336704",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "S",
-						"slot_label": "Scale",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Vector3",
-											"var_value": "1 1 1"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "91336704",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "R",
-						"slot_label": "Rotation",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Quaternion",
-											"var_value": "1 0 0 0"
-										}
-									]
-								}
-							]
-						}
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "91336704",
-						"slot_index": 0,
-						"linked_inputs": []
-					}
-				]
-			},
-			{
-				"ID": "7116B340",
-				"Name": "",
-				"type": "Input_Slider",
-				"num_inputs": 1,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "80 565",
-				"view_size": "162 116",
-				"metadata": {
-					"max": {
-						"type": "Float",
-						"value": "15"
-					},
-					"value": {
-						"type": "Float",
-						"value": "0"
-					}
-				},
-				"input_slots": [
-					{
-						"home_component": "7116B340",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "",
-						"slot_label": "I",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Float",
-											"var_value": "0"
-										}
-									]
-								}
-							]
-						}
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "7116B340",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "32996401",
-								"linked_slot_index": 3
-							},
-							{
-								"linked_component": "32996401",
-								"linked_slot_index": 4
-							},
-							{
-								"linked_component": "06A07939",
-								"linked_slot_index": 0
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "18F995FE",
-				"Name": "",
-				"type": "Graphics_CreateMaterial",
-				"num_inputs": 5,
-				"num_outputs": 2,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "1238 796",
-				"view_size": "174 148",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "18F995FE",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "Tec",
-						"slot_label": "Technique",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "String",
-											"var_value": "Techniques/PBRDiff.xml"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "18F995FE",
-						"slot_index": 1,
-						"data_access": 1,
-						"slot_var_label": "P",
-						"slot_label": "Parameters",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "None",
-											"var_value": ""
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "18F995FE",
-						"slot_index": 2,
-						"data_access": 1,
-						"slot_var_label": "T",
-						"slot_label": "Textures",
-						"protected": true,
-						"linked_component": "215B6242",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "18F995FE",
-						"slot_index": 3,
-						"data_access": 1,
-						"slot_var_label": "VS",
-						"slot_label": "Vertex Defines",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "None",
-											"var_value": ""
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "18F995FE",
-						"slot_index": 4,
-						"data_access": 1,
-						"slot_var_label": "PS",
-						"slot_label": "Pixel Defines",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "None",
-											"var_value": ""
-										}
-									]
-								}
-							]
-						}
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "18F995FE",
-						"slot_index": 0,
-						"linked_inputs": []
-					},
-					{
-						"home_component": "18F995FE",
-						"slot_index": 1,
-						"linked_inputs": [
-							{
-								"linked_component": "F21BC6FD",
-								"linked_slot_index": 0
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "E9D2F901",
-				"Name": "",
-				"type": "Sets_NamedPair",
-				"num_inputs": 2,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "833 824",
-				"view_size": "112 82",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "E9D2F901",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "N",
-						"slot_label": "Name",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "String",
-											"var_value": "Diff"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "E9D2F901",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "V",
-						"slot_label": "Value",
-						"protected": true,
-						"linked_component": "3354A43B",
-						"linked_slot_index": 0
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "E9D2F901",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "215B6242",
-								"linked_slot_index": 0
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "215B6242",
-				"Name": "",
-				"type": "Tree_Graft",
-				"num_inputs": 1,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "1021 940",
-				"view_size": "140 80",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "215B6242",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "T",
-						"slot_label": "IoDataTree",
-						"protected": true,
-						"linked_component": "E9D2F901",
-						"linked_slot_index": 0
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "215B6242",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "18F995FE",
-								"linked_slot_index": 2
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "C7EA6D34",
-				"Name": "",
-				"type": "Scene_AddStaticModel",
-				"num_inputs": 3,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "1531 471",
+				"coordinates": "601 107",
 				"view_size": "150 104",
 				"metadata": null,
 				"input_slots": [
 					{
-						"home_component": "C7EA6D34",
+						"home_component": "60D69105",
 						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "ID",
-						"slot_label": "NodeID",
+						"data_access": 2,
+						"slot_var_label": "D",
+						"slot_label": "DataItem",
 						"protected": true,
-						"linked_component": "445984F4",
+						"linked_component": "0558FA34",
 						"linked_slot_index": 0
 					},
 					{
-						"home_component": "C7EA6D34",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "Resource",
-						"slot_label": "Resource",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "String",
-											"var_value": "Models/Plane.mdl"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "C7EA6D34",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "MT",
-						"slot_label": "Material",
-						"protected": true,
-						"linked_component": "F21BC6FD",
-						"linked_slot_index": 0
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "C7EA6D34",
-						"slot_index": 0,
-						"linked_inputs": []
-					}
-				]
-			},
-			{
-				"ID": "D8120ABF",
-				"Name": "",
-				"type": "Scene_AddNode",
-				"num_inputs": 4,
-				"num_outputs": 2,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "367 269",
-				"view_size": "132 126",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "D8120ABF",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "T",
-						"slot_label": "Transform",
-						"protected": true,
-						"linked_component": "34C67208",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "D8120ABF",
+						"home_component": "60D69105",
 						"slot_index": 1,
 						"data_access": 0,
 						"slot_var_label": "N",
-						"slot_label": "Name",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "String",
-											"var_value": "NewGeneratedNode"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "D8120ABF",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "P",
-						"slot_label": "Parent",
+						"slot_label": "RecordLimit",
 						"protected": true,
 						"linked_component": "",
 						"linked_slot_index": -1,
@@ -845,7 +90,7 @@
 									"items": [
 										{
 											"var_type": "Int",
-											"var_value": "-1"
+											"var_value": "2"
 										}
 									]
 								}
@@ -853,162 +98,58 @@
 						}
 					},
 					{
-						"home_component": "D8120ABF",
-						"slot_index": 3,
-						"data_access": 0,
-						"slot_var_label": "O",
-						"slot_label": "Options",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Int",
-											"var_value": "0"
-										}
-									]
-								}
-							]
-						}
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "D8120ABF",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "445984F4",
-								"linked_slot_index": 0
-							}
-						]
-					},
-					{
-						"home_component": "D8120ABF",
-						"slot_index": 1,
-						"linked_inputs": []
-					}
-				]
-			},
-			{
-				"ID": "34C67208",
-				"Name": "",
-				"type": "Maths_ConstructTransform",
-				"num_inputs": 3,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "32 265",
-				"view_size": "176 104",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "34C67208",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "P",
-						"slot_label": "Position",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Vector3",
-											"var_value": "0 0 0"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "34C67208",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "S",
-						"slot_label": "Scale",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Vector3",
-											"var_value": "10 10 10"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "34C67208",
+						"home_component": "60D69105",
 						"slot_index": 2,
 						"data_access": 0,
 						"slot_var_label": "R",
-						"slot_label": "Rotation",
+						"slot_label": "Reset",
 						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Quaternion",
-											"var_value": "1 0 0 0"
-										}
-									]
-								}
-							]
-						}
+						"linked_component": "E6B91184",
+						"linked_slot_index": 0
 					}
 				],
 				"output_slots": [
 					{
-						"home_component": "34C67208",
+						"home_component": "60D69105",
 						"slot_index": 0,
 						"linked_inputs": [
 							{
-								"linked_component": "D8120ABF",
-								"linked_slot_index": 0
+								"linked_component": "AC71A503",
+								"linked_slot_index": 2
 							}
 						]
 					}
 				]
 			},
 			{
-				"ID": "12DE043D",
+				"ID": "0558FA34",
 				"Name": "",
-				"type": "Input_StringAppend",
+				"type": "Sets_GetValueByKey",
 				"num_inputs": 2,
 				"num_outputs": 1,
 				"preview": true,
 				"enabled": true,
 				"unique_view_name": "MyGraphView",
-				"coordinates": "551 891",
-				"view_size": "166 82",
+				"coordinates": "393 107",
+				"view_size": "145 82",
 				"metadata": null,
 				"input_slots": [
 					{
-						"home_component": "12DE043D",
+						"home_component": "0558FA34",
 						"slot_index": 0,
 						"data_access": 0,
-						"slot_var_label": "A",
-						"slot_label": "InputString",
+						"slot_var_label": "M",
+						"slot_label": "Map",
+						"protected": true,
+						"linked_component": "AAC1A63F",
+						"linked_slot_index": 0
+					},
+					{
+						"home_component": "0558FA34",
+						"slot_index": 1,
+						"data_access": 0,
+						"slot_var_label": "K",
+						"slot_label": "Key",
 						"protected": true,
 						"linked_component": "",
 						"linked_slot_index": -1,
@@ -1019,19 +160,111 @@
 									"items": [
 										{
 											"var_type": "String",
-											"var_value": "Demo/"
+											"var_value": "AssetPath"
 										}
 									]
 								}
 							]
 						}
+					}
+				],
+				"output_slots": [
+					{
+						"home_component": "0558FA34",
+						"slot_index": 0,
+						"linked_inputs": [
+							{
+								"linked_component": "60D69105",
+								"linked_slot_index": 0
+							}
+						]
+					}
+				]
+			},
+			{
+				"ID": "E6B91184",
+				"Name": "",
+				"type": "Input_Toggle",
+				"num_inputs": 1,
+				"num_outputs": 1,
+				"preview": true,
+				"enabled": true,
+				"unique_view_name": "MyGraphView",
+				"coordinates": "440 221",
+				"view_size": "80 80",
+				"metadata": {
+					"ButtonValue": {
+						"type": "Bool",
+						"value": "false"
+					}
+				},
+				"input_slots": [
+					{
+						"home_component": "E6B91184",
+						"slot_index": 0,
+						"data_access": 0,
+						"slot_var_label": "",
+						"slot_label": "",
+						"protected": true,
+						"linked_component": "",
+						"linked_slot_index": -1,
+						"input_tree": {
+							"branches": [
+								{
+									"path": "0_",
+									"items": [
+										{
+											"var_type": "Bool",
+											"var_value": "false"
+										}
+									]
+								}
+							]
+						}
+					}
+				],
+				"output_slots": [
+					{
+						"home_component": "E6B91184",
+						"slot_index": 0,
+						"linked_inputs": [
+							{
+								"linked_component": "60D69105",
+								"linked_slot_index": 2
+							}
+						]
+					}
+				]
+			},
+			{
+				"ID": "69C9E67C",
+				"Name": "",
+				"type": "Interop_SystemCommand",
+				"num_inputs": 3,
+				"num_outputs": 1,
+				"preview": true,
+				"enabled": true,
+				"unique_view_name": "MyGraphView",
+				"coordinates": "1297 200",
+				"view_size": "156 104",
+				"metadata": null,
+				"input_slots": [
+					{
+						"home_component": "69C9E67C",
+						"slot_index": 0,
+						"data_access": 0,
+						"slot_var_label": "C",
+						"slot_label": "Executable",
+						"protected": true,
+						"linked_component": "AC71A503",
+						"linked_slot_index": 0
 					},
 					{
-						"home_component": "12DE043D",
+						"home_component": "69C9E67C",
 						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "B",
-						"slot_label": "AppendString",
+						"data_access": 1,
+						"slot_var_label": "A",
+						"slot_label": "Arguments",
 						"protected": true,
 						"linked_component": "",
 						"linked_slot_index": -1,
@@ -1048,87 +281,63 @@
 								}
 							]
 						}
+					},
+					{
+						"home_component": "69C9E67C",
+						"slot_index": 2,
+						"data_access": 0,
+						"slot_var_label": "C",
+						"slot_label": "Command",
+						"protected": true,
+						"linked_component": "",
+						"linked_slot_index": -1,
+						"input_tree": {
+							"branches": [
+								{
+									"path": "0_",
+									"items": [
+										{
+											"var_type": "Bool",
+											"var_value": "true"
+										}
+									]
+								}
+							]
+						}
 					}
 				],
 				"output_slots": [
 					{
-						"home_component": "12DE043D",
+						"home_component": "69C9E67C",
 						"slot_index": 0,
 						"linked_inputs": [
 							{
-								"linked_component": "3354A43B",
-								"linked_slot_index": 0
+								"linked_component": "997F35BE",
+								"linked_slot_index": 3
 							}
 						]
 					}
 				]
 			},
 			{
-				"ID": "F21BC6FD",
+				"ID": "FD0ADD3B",
 				"Name": "",
-				"type": "Tree_Flatten",
+				"type": "Input_Panel",
 				"num_inputs": 1,
 				"num_outputs": 1,
 				"preview": true,
 				"enabled": true,
 				"unique_view_name": "MyGraphView",
-				"coordinates": "1548 797",
-				"view_size": "140 80",
+				"coordinates": "586 312",
+				"view_size": "288 156",
 				"metadata": null,
 				"input_slots": [
 					{
-						"home_component": "F21BC6FD",
+						"home_component": "FD0ADD3B",
 						"slot_index": 0,
 						"data_access": 0,
-						"slot_var_label": "T",
-						"slot_label": "IoDataTree",
-						"protected": true,
-						"linked_component": "18F995FE",
-						"linked_slot_index": 1
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "F21BC6FD",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "C7EA6D34",
-								"linked_slot_index": 2
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "3354A43B",
-				"Name": "",
-				"type": "Graphics_LoadResource",
-				"num_inputs": 2,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "688 1002",
-				"view_size": "198 82",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "3354A43B",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "P",
-						"slot_label": "Path",
-						"protected": true,
-						"linked_component": "12DE043D",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "3354A43B",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "T",
-						"slot_label": "Type",
+						"slot_var_label": "",
+						"slot_label": "",
 						"protected": true,
 						"linked_component": "",
 						"linked_slot_index": -1,
@@ -1139,7 +348,11 @@
 									"items": [
 										{
 											"var_type": "String",
-											"var_value": "Texture2D"
+											"var_value": "ffmpeg -i  X -loglevel quiet -vf \"edgedetect=low=0.1:high=0.4,lutrgb=r=negval:g=negval:b=negval\" -y edges_A.png"
+										},
+										{
+											"var_type": "String",
+											"var_value": "ffmpeg -i  X -loglevel quiet -vf \"edgedetect=low=0.1:high=0.4,lutrgb=r=negval:g=negval:b=negval\" -y edges_B.png\r"
 										}
 									]
 								}
@@ -1149,476 +362,46 @@
 				],
 				"output_slots": [
 					{
-						"home_component": "3354A43B",
+						"home_component": "FD0ADD3B",
 						"slot_index": 0,
 						"linked_inputs": [
 							{
-								"linked_component": "E9D2F901",
-								"linked_slot_index": 1
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "B378B13E",
-				"Name": "",
-				"type": "Graphics_Grid",
-				"num_inputs": 4,
-				"num_outputs": 3,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "148 719",
-				"view_size": "150 126",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "B378B13E",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "T",
-						"slot_label": "Transform",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Matrix3x4",
-											"var_value": "1 0 0 0 0 1 0 0 0 0 1 0"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "B378B13E",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "S",
-						"slot_label": "Scale",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Vector3",
-											"var_value": "500 1 500"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "B378B13E",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "D",
-						"slot_label": "Density",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Float",
-											"var_value": "1"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "B378B13E",
-						"slot_index": 3,
-						"data_access": 0,
-						"slot_var_label": "C",
-						"slot_label": "Color",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Color",
-											"var_value": "0.5 0.5 0.5 0.5"
-										}
-									]
-								}
-							]
-						}
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "B378B13E",
-						"slot_index": 0,
-						"linked_inputs": []
-					},
-					{
-						"home_component": "B378B13E",
-						"slot_index": 1,
-						"linked_inputs": []
-					},
-					{
-						"home_component": "B378B13E",
-						"slot_index": 2,
-						"linked_inputs": []
-					}
-				]
-			},
-			{
-				"ID": "32601700",
-				"Name": "",
-				"type": "Input_Slider",
-				"num_inputs": 1,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "50 402",
-				"view_size": "162 116",
-				"metadata": {
-					"max": {
-						"type": "Float",
-						"value": "1"
-					},
-					"value": {
-						"type": "Float",
-						"value": "0.123288"
-					}
-				},
-				"input_slots": [
-					{
-						"home_component": "32601700",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "",
-						"slot_label": "I",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Float",
-											"var_value": "0.123288"
-										}
-									]
-								}
-							]
-						}
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "32601700",
-						"slot_index": 0,
-						"linked_inputs": []
-					}
-				]
-			},
-			{
-				"ID": "9501E2AD",
-				"Name": "",
-				"type": "Sets_Series",
-				"num_inputs": 3,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "723 431",
-				"view_size": "86 104",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "9501E2AD",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "S",
-						"slot_label": "Start",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Float",
-											"var_value": "0"
-										}
-									]
-								}
-							]
-						}
-					},
-					{
-						"home_component": "9501E2AD",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "N",
-						"slot_label": "Step",
-						"protected": true,
-						"linked_component": "299B5070",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "9501E2AD",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "C",
-						"slot_label": "Count",
-						"protected": true,
-						"linked_component": "22D3A6BD",
-						"linked_slot_index": 0
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "9501E2AD",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "E163D6BA",
-								"linked_slot_index": 1
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "E163D6BA",
-				"Name": "",
-				"type": "Vector_ConstructVector",
-				"num_inputs": 3,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "1081 536",
-				"view_size": "151 104",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "E163D6BA",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "X",
-						"slot_label": "X",
-						"protected": true,
-						"linked_component": "C02B57B6",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "E163D6BA",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "Y",
-						"slot_label": "Y",
-						"protected": true,
-						"linked_component": "9501E2AD",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "E163D6BA",
-						"slot_index": 2,
-						"data_access": 0,
-						"slot_var_label": "Z",
-						"slot_label": "Z",
-						"protected": true,
-						"linked_component": "C02B57B6",
-						"linked_slot_index": 2
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "E163D6BA",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "445984F4",
-								"linked_slot_index": 1
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "C02B57B6",
-				"Name": "",
-				"type": "Vector_DeconstructVector",
-				"num_inputs": 1,
-				"num_outputs": 3,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "852 535",
-				"view_size": "167 104",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "C02B57B6",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "V",
-						"slot_label": "Vector",
-						"protected": true,
-						"linked_component": "32996401",
-						"linked_slot_index": 0
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "C02B57B6",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "E163D6BA",
+								"linked_component": "AC71A503",
 								"linked_slot_index": 0
 							}
 						]
-					},
-					{
-						"home_component": "C02B57B6",
-						"slot_index": 1,
-						"linked_inputs": []
-					},
-					{
-						"home_component": "C02B57B6",
-						"slot_index": 2,
-						"linked_inputs": [
-							{
-								"linked_component": "E163D6BA",
-								"linked_slot_index": 2
-							}
-						]
 					}
 				]
 			},
 			{
-				"ID": "06A07939",
+				"ID": "AC71A503",
 				"Name": "",
-				"type": "Maths_Division",
-				"num_inputs": 2,
-				"num_outputs": 1,
-				"preview": true,
-				"enabled": true,
-				"unique_view_name": "MyGraphView",
-				"coordinates": "256 470",
-				"view_size": "91 82",
-				"metadata": null,
-				"input_slots": [
-					{
-						"home_component": "06A07939",
-						"slot_index": 0,
-						"data_access": 0,
-						"slot_var_label": "X",
-						"slot_label": "X",
-						"protected": true,
-						"linked_component": "7116B340",
-						"linked_slot_index": 0
-					},
-					{
-						"home_component": "06A07939",
-						"slot_index": 1,
-						"data_access": 0,
-						"slot_var_label": "Y",
-						"slot_label": "Y",
-						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Float",
-											"var_value": "15"
-										}
-									]
-								}
-							]
-						}
-					}
-				],
-				"output_slots": [
-					{
-						"home_component": "06A07939",
-						"slot_index": 0,
-						"linked_inputs": [
-							{
-								"linked_component": "299B5070",
-								"linked_slot_index": 2
-							}
-						]
-					}
-				]
-			},
-			{
-				"ID": "299B5070",
-				"Name": "",
-				"type": "Maths_Lerp",
+				"type": "Input_StringReplace",
 				"num_inputs": 3,
 				"num_outputs": 1,
 				"preview": true,
 				"enabled": true,
 				"unique_view_name": "MyGraphView",
-				"coordinates": "436 412",
-				"view_size": "158 104",
+				"coordinates": "1025 192",
+				"view_size": "156 104",
 				"metadata": null,
 				"input_slots": [
 					{
-						"home_component": "299B5070",
+						"home_component": "AC71A503",
 						"slot_index": 0,
 						"data_access": 0,
-						"slot_var_label": "A",
-						"slot_label": "From",
+						"slot_var_label": "S",
+						"slot_label": "String",
 						"protected": true,
-						"linked_component": "",
-						"linked_slot_index": -1,
-						"input_tree": {
-							"branches": [
-								{
-									"path": "0_",
-									"items": [
-										{
-											"var_type": "Float",
-											"var_value": "1"
-										}
-									]
-								}
-							]
-						}
+						"linked_component": "FD0ADD3B",
+						"linked_slot_index": 0
 					},
 					{
-						"home_component": "299B5070",
+						"home_component": "AC71A503",
 						"slot_index": 1,
 						"data_access": 0,
-						"slot_var_label": "B",
-						"slot_label": "To",
+						"slot_var_label": "A",
+						"slot_label": "ReplaceThis",
 						"protected": true,
 						"linked_component": "",
 						"linked_slot_index": -1,
@@ -1628,8 +411,8 @@
 									"path": "0_",
 									"items": [
 										{
-											"var_type": "Float",
-											"var_value": "0"
+											"var_type": "String",
+											"var_value": "X"
 										}
 									]
 								}
@@ -1637,26 +420,164 @@
 						}
 					},
 					{
-						"home_component": "299B5070",
+						"home_component": "AC71A503",
 						"slot_index": 2,
 						"data_access": 0,
-						"slot_var_label": "t",
-						"slot_label": "T",
+						"slot_var_label": "B",
+						"slot_label": "ReplaceWith",
 						"protected": true,
-						"linked_component": "06A07939",
+						"linked_component": "60D69105",
 						"linked_slot_index": 0
 					}
 				],
 				"output_slots": [
 					{
-						"home_component": "299B5070",
+						"home_component": "AC71A503",
 						"slot_index": 0,
 						"linked_inputs": [
 							{
-								"linked_component": "9501E2AD",
-								"linked_slot_index": 1
+								"linked_component": "69C9E67C",
+								"linked_slot_index": 0
 							}
 						]
+					}
+				]
+			},
+			{
+				"ID": "2A028381",
+				"Name": "",
+				"type": "Input_Panel",
+				"num_inputs": 1,
+				"num_outputs": 1,
+				"preview": true,
+				"enabled": true,
+				"unique_view_name": "MyGraphView",
+				"coordinates": "866 515",
+				"view_size": "404 175",
+				"metadata": null,
+				"input_slots": [
+					{
+						"home_component": "2A028381",
+						"slot_index": 0,
+						"data_access": 0,
+						"slot_var_label": "",
+						"slot_label": "",
+						"protected": true,
+						"linked_component": "",
+						"linked_slot_index": -1,
+						"input_tree": {
+							"branches": [
+								{
+									"path": "0_",
+									"items": [
+										{
+											"var_type": "String",
+											"var_value": "magick compare edges_A.png edges_B.png compare.png"
+										}
+									]
+								}
+							]
+						}
+					}
+				],
+				"output_slots": [
+					{
+						"home_component": "2A028381",
+						"slot_index": 0,
+						"linked_inputs": [
+							{
+								"linked_component": "997F35BE",
+								"linked_slot_index": 0
+							}
+						]
+					}
+				]
+			},
+			{
+				"ID": "997F35BE",
+				"Name": "",
+				"type": "Interop_SystemCommand",
+				"num_inputs": 4,
+				"num_outputs": 1,
+				"preview": true,
+				"enabled": true,
+				"unique_view_name": "MyGraphView",
+				"coordinates": "1500 405",
+				"view_size": "156 126",
+				"metadata": null,
+				"input_slots": [
+					{
+						"home_component": "997F35BE",
+						"slot_index": 0,
+						"data_access": 0,
+						"slot_var_label": "C",
+						"slot_label": "Executable",
+						"protected": true,
+						"linked_component": "2A028381",
+						"linked_slot_index": 0
+					},
+					{
+						"home_component": "997F35BE",
+						"slot_index": 1,
+						"data_access": 1,
+						"slot_var_label": "A",
+						"slot_label": "Arguments",
+						"protected": true,
+						"linked_component": "",
+						"linked_slot_index": -1,
+						"input_tree": {
+							"branches": [
+								{
+									"path": "0_",
+									"items": [
+										{
+											"var_type": "None",
+											"var_value": ""
+										}
+									]
+								}
+							]
+						}
+					},
+					{
+						"home_component": "997F35BE",
+						"slot_index": 2,
+						"data_access": 0,
+						"slot_var_label": "C",
+						"slot_label": "Command",
+						"protected": true,
+						"linked_component": "",
+						"linked_slot_index": -1,
+						"input_tree": {
+							"branches": [
+								{
+									"path": "0_",
+									"items": [
+										{
+											"var_type": "Bool",
+											"var_value": "true"
+										}
+									]
+								}
+							]
+						}
+					},
+					{
+						"home_component": "997F35BE",
+						"slot_index": 3,
+						"data_access": 0,
+						"slot_var_label": "CS",
+						"slot_label": "Custom_2",
+						"protected": false,
+						"linked_component": "69C9E67C",
+						"linked_slot_index": 0
+					}
+				],
+				"output_slots": [
+					{
+						"home_component": "997F35BE",
+						"slot_index": 0,
+						"linked_inputs": []
 					}
 				]
 			}

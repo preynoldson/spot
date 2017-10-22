@@ -11,14 +11,14 @@
 	<attribute name="Bottom Right Color" value="0.12 0.12 0.12 1" />
 	<attribute name="Variables">
 		<variant hash="1369052027" type="Ptr" value="0" />
-		<variant hash="4022291303" type="Int" value="1" />
+		<variant hash="4022291303" type="Int" value="2" />
 	</attribute>
 	<attribute name="Border" value="10 10 10 10" />
-	<attribute name="Split Ratio" value="0.46474" />
+	<attribute name="Split Ratio" value="0.623521" />
 	<attribute name="Content Type" value="889489016" />
 	<element type="ModularWindow" style="ModularWindow">
 		<attribute name="Name" value="__FIRST_CHILD__" />
-		<attribute name="Size" value="931 1008" />
+		<attribute name="Size" value="1249 1008" />
 		<attribute name="Pivot" value="0 0" />
 		<attribute name="Color" value="0.12 0.12 0.12 1" />
 		<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -26,12 +26,12 @@
 		<attribute name="Bottom Left Color" value="0.12 0.12 0.12 1" />
 		<attribute name="Bottom Right Color" value="0.12 0.12 0.12 1" />
 		<attribute name="Border" value="10 10 10 10" />
-		<attribute name="Split Ratio" value="0.5" />
+		<attribute name="Split Ratio" value="0.471623" />
 		<attribute name="Split Type" value="MWL_VERTICAL" />
 		<attribute name="Content Type" value="889489016" />
 		<element type="ModularWindow" style="ModularWindow">
 			<attribute name="Name" value="__FIRST_CHILD__" />
-			<attribute name="Size" value="931 506" />
+			<attribute name="Size" value="1249 477" />
 			<attribute name="Pivot" value="0 0" />
 			<attribute name="Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -40,23 +40,90 @@
 			<attribute name="Bottom Right Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Drag And Drop Mode" value="Target" />
 			<attribute name="Border" value="10 10 10 10" />
-			<attribute name="Split Ratio" value="0.5" />
+			<attribute name="Split Ratio" value="0.541568" />
 			<attribute name="Split Type" value="MWL_HORIZONTAL" />
-			<attribute name="Content Type" value="-772685686" />
-			<content>
-				<attribute name="Name" value="__WINDOW_CONTENT__" />
-				<attribute name="Position" value="2 2" />
-				<attribute name="Size" value="927 502" />
+			<attribute name="Content Type" value="889489016" />
+			<element type="ModularWindow" style="ModularWindow">
+				<attribute name="Name" value="__FIRST_CHILD__" />
+				<attribute name="Size" value="678 477" />
 				<attribute name="Pivot" value="0 0" />
+				<attribute name="Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Top Right Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Bottom Left Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Bottom Right Color" value="0.12 0.12 0.12 1" />
 				<attribute name="Drag And Drop Mode" value="Target" />
-				<attribute name="Texture" value="Texture2D;C:/Users/Daniel/Documents/IoProjects/MockUp/Data/Demo/03-Photo_P.png" />
-				<attribute name="Image Rect" value="0 0 3264 2448" />
-			</content>
+				<attribute name="Border" value="10 10 10 10" />
+				<attribute name="Split Ratio" value="0.5" />
+				<attribute name="Split Type" value="MWL_VERTICAL" />
+				<attribute name="Content Type" value="-772685686" />
+				<content>
+					<attribute name="Name" value="__WINDOW_CONTENT__" />
+					<attribute name="Position" value="2 2" />
+					<attribute name="Size" value="674 473" />
+					<attribute name="Pivot" value="0 0" />
+					<attribute name="Drag And Drop Mode" value="Target" />
+					<attribute name="Texture" value="Texture2D;C:/Dev/spot/MockUp/Data/Demo/01-Model.png" />
+					<attribute name="Image Rect" value="0 0 3264 2449" />
+				</content>
+			</element>
+			<element type="ModularWindow" style="ModularWindow">
+				<attribute name="Name" value="__SECOND_CHILD__" />
+				<attribute name="Position" value="678 0" />
+				<attribute name="Size" value="571 477" />
+				<attribute name="Pivot" value="0 0" />
+				<attribute name="Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Top Right Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Bottom Left Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Bottom Right Color" value="0.12 0.12 0.12 1" />
+				<attribute name="Drag And Drop Mode" value="Target" />
+				<attribute name="Border" value="10 10 10 10" />
+				<attribute name="Split Ratio" value="0.5" />
+				<attribute name="Split Type" value="MWL_VERTICAL" />
+				<attribute name="Content Type" value="-772685686" />
+				<content>
+					<attribute name="Name" value="__WINDOW_CONTENT__" />
+					<attribute name="Position" value="2 2" />
+					<attribute name="Size" value="567 473" />
+					<attribute name="Pivot" value="0 0" />
+					<attribute name="Drag And Drop Mode" value="Target" />
+					<attribute name="Texture" value="Texture2D;C:/Dev/spot/MockUp/Data/Demo/01-Photo.JPG" />
+					<attribute name="Image Rect" value="0 0 3264 2448" />
+				</content>
+			</element>
+			<element type="Button">
+				<attribute name="Name" value="__DIVIDER__" />
+				<attribute name="Position" value="676 0" />
+				<attribute name="Size" value="4 477" />
+				<attribute name="Pivot" value="0 0" />
+				<attribute name="Priority" value="1000" />
+				<attribute name="Color" value="0.07 0.07 0.07 1" />
+				<attribute name="Top Left Color" value="0.07 0.07 0.07 1" />
+				<attribute name="Top Right Color" value="0.07 0.07 0.07 1" />
+				<attribute name="Bottom Left Color" value="0.07 0.07 0.07 1" />
+				<attribute name="Bottom Right Color" value="0.07 0.07 0.07 1" />
+				<element type="BorderImage">
+					<attribute name="Name" value="DividerViz" />
+					<attribute name="Position" value="-16 618" />
+					<attribute name="Size" value="32 32" />
+					<attribute name="Pivot" value="0 0" />
+					<attribute name="Color" value="0.35 0.35 0.35 0.35" />
+					<attribute name="Top Left Color" value="0.35 0.35 0.35 0.35" />
+					<attribute name="Top Right Color" value="0.35 0.35 0.35 0.35" />
+					<attribute name="Bottom Left Color" value="0.35 0.35 0.35 0.35" />
+					<attribute name="Bottom Right Color" value="0.35 0.35 0.35 0.35" />
+					<attribute name="Is Visible" value="false" />
+					<attribute name="Texture" value="Texture2D;Textures/ResizeHorizontal.png" />
+					<attribute name="Image Rect" value="0 0 32 32" />
+					<attribute name="Blend Mode" value="addalpha" />
+				</element>
+			</element>
 		</element>
 		<element type="ModularWindow" style="ModularWindow">
 			<attribute name="Name" value="__SECOND_CHILD__" />
-			<attribute name="Position" value="0 506" />
-			<attribute name="Size" value="931 502" />
+			<attribute name="Position" value="0 477" />
+			<attribute name="Size" value="1249 531" />
 			<attribute name="Pivot" value="0 0" />
 			<attribute name="Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -71,17 +138,17 @@
 			<content>
 				<attribute name="Name" value="__WINDOW_CONTENT__" />
 				<attribute name="Position" value="2 2" />
-				<attribute name="Size" value="927 498" />
+				<attribute name="Size" value="1245 527" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Drag And Drop Mode" value="Target" />
-				<attribute name="Texture" value="Texture2D;C:/Users/Daniel/Documents/IoProjects/MockUp/Data/Demo/02-Model.png" />
+				<attribute name="Texture" value="Texture2D;C:/Dev/spot/MockUp/compare.png" />
 				<attribute name="Image Rect" value="0 0 3264 2449" />
 			</content>
 		</element>
 		<element type="Button">
 			<attribute name="Name" value="__DIVIDER__" />
-			<attribute name="Position" value="0 504" />
-			<attribute name="Size" value="931 4" />
+			<attribute name="Position" value="0 475" />
+			<attribute name="Size" value="1249 4" />
 			<attribute name="Pivot" value="0 0" />
 			<attribute name="Priority" value="1000" />
 			<attribute name="Color" value="0.07 0.07 0.07 1" />
@@ -91,7 +158,7 @@
 			<attribute name="Bottom Right Color" value="0.07 0.07 0.07 1" />
 			<element type="BorderImage">
 				<attribute name="Name" value="DividerViz" />
-				<attribute name="Position" value="535 -16" />
+				<attribute name="Position" value="608 -16" />
 				<attribute name="Size" value="32 32" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Color" value="0.35 0.35 0.35 0.35" />
@@ -108,8 +175,8 @@
 	</element>
 	<element type="ModularWindow" style="ModularWindow">
 		<attribute name="Name" value="__SECOND_CHILD__" />
-		<attribute name="Position" value="931 0" />
-		<attribute name="Size" value="1069 1008" />
+		<attribute name="Position" value="1249 0" />
+		<attribute name="Size" value="751 1008" />
 		<attribute name="Pivot" value="0 0" />
 		<attribute name="Color" value="0.12 0.12 0.12 1" />
 		<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -122,7 +189,7 @@
 		<attribute name="Content Type" value="889489016" />
 		<element type="ModularWindow" style="ModularWindow">
 			<attribute name="Name" value="__FIRST_CHILD__" />
-			<attribute name="Size" value="1069 198" />
+			<attribute name="Size" value="751 198" />
 			<attribute name="Pivot" value="0 0" />
 			<attribute name="Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -130,12 +197,12 @@
 			<attribute name="Bottom Left Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Bottom Right Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Border" value="10 10 10 10" />
-			<attribute name="Split Ratio" value="0.5" />
+			<attribute name="Split Ratio" value="0.419385" />
 			<attribute name="Split Type" value="MWL_HORIZONTAL" />
 			<attribute name="Content Type" value="889489016" />
 			<element type="ModularWindow" style="ModularWindow">
 				<attribute name="Name" value="__FIRST_CHILD__" />
-				<attribute name="Size" value="536 198" />
+				<attribute name="Size" value="316 198" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Color" value="0.12 0.12 0.12 1" />
 				<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -147,13 +214,13 @@
 				<attribute name="Split Type" value="MWL_VERTICAL" />
 				<attribute name="Content Type" value="-917570003" />
 				<content>
-					<attribute name="Path" value="C:/Users/Daniel/Documents/IoProjects/MockUp/Data/Demo/" />
+					<attribute name="Path" value="C:/Dev/spot/MockUp/Data/Demo/" />
 				</content>
 			</element>
 			<element type="ModularWindow" style="ModularWindow">
 				<attribute name="Name" value="__SECOND_CHILD__" />
-				<attribute name="Position" value="536 0" />
-				<attribute name="Size" value="533 198" />
+				<attribute name="Position" value="316 0" />
+				<attribute name="Size" value="435 198" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Color" value="0.12 0.12 0.12 1" />
 				<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -163,14 +230,14 @@
 				<attribute name="Border" value="10 10 10 10" />
 				<attribute name="Split Ratio" value="0.5" />
 				<attribute name="Split Type" value="MWL_VERTICAL" />
-				<attribute name="Content Type" value="-917570003" />
+				<attribute name="Content Type" value="1514433550" />
 				<content>
-					<attribute name="Path" value="C:/Users/Daniel/Documents/IoProjects/MockUp/Data/" />
+					<attribute name="Query" value="system" />
 				</content>
 			</element>
 			<element type="Button">
 				<attribute name="Name" value="__DIVIDER__" />
-				<attribute name="Position" value="534 0" />
+				<attribute name="Position" value="314 0" />
 				<attribute name="Size" value="4 198" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Priority" value="1000" />
@@ -181,7 +248,7 @@
 				<attribute name="Bottom Right Color" value="0.07 0.07 0.07 1" />
 				<element type="BorderImage">
 					<attribute name="Name" value="DividerViz" />
-					<attribute name="Position" value="-16 282" />
+					<attribute name="Position" value="-16 83" />
 					<attribute name="Size" value="32 32" />
 					<attribute name="Pivot" value="0 0" />
 					<attribute name="Color" value="0.35 0.35 0.35 0.35" />
@@ -199,7 +266,7 @@
 		<element type="ModularWindow" style="ModularWindow">
 			<attribute name="Name" value="__SECOND_CHILD__" />
 			<attribute name="Position" value="0 198" />
-			<attribute name="Size" value="1069 810" />
+			<attribute name="Size" value="751 810" />
 			<attribute name="Pivot" value="0 0" />
 			<attribute name="Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -207,12 +274,12 @@
 			<attribute name="Bottom Left Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Bottom Right Color" value="0.12 0.12 0.12 1" />
 			<attribute name="Border" value="10 10 10 10" />
-			<attribute name="Split Ratio" value="0.703009" />
+			<attribute name="Split Ratio" value="0.858076" />
 			<attribute name="Split Type" value="MWL_HORIZONTAL" />
 			<attribute name="Content Type" value="889489016" />
 			<element type="ModularWindow" style="ModularWindow">
 				<attribute name="Name" value="__FIRST_CHILD__" />
-				<attribute name="Size" value="1069 571" />
+				<attribute name="Size" value="751 697" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Color" value="0.12 0.12 0.12 1" />
 				<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -227,8 +294,8 @@
 			</element>
 			<element type="ModularWindow" style="ModularWindow">
 				<attribute name="Name" value="__SECOND_CHILD__" />
-				<attribute name="Position" value="0 571" />
-				<attribute name="Size" value="1069 239" />
+				<attribute name="Position" value="0 697" />
+				<attribute name="Size" value="751 113" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Color" value="0.12 0.12 0.12 1" />
 				<attribute name="Top Left Color" value="0.12 0.12 0.12 1" />
@@ -243,8 +310,8 @@
 			</element>
 			<element type="Button">
 				<attribute name="Name" value="__DIVIDER__" />
-				<attribute name="Position" value="0 569" />
-				<attribute name="Size" value="1069 4" />
+				<attribute name="Position" value="0 695" />
+				<attribute name="Size" value="751 4" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Priority" value="1000" />
 				<attribute name="Color" value="0.07 0.07 0.07 1" />
@@ -254,7 +321,7 @@
 				<attribute name="Bottom Right Color" value="0.07 0.07 0.07 1" />
 				<element type="BorderImage">
 					<attribute name="Name" value="DividerViz" />
-					<attribute name="Position" value="2016 -16" />
+					<attribute name="Position" value="359 -16" />
 					<attribute name="Size" value="32 32" />
 					<attribute name="Pivot" value="0 0" />
 					<attribute name="Color" value="0.35 0.35 0.35 0.35" />
@@ -272,7 +339,7 @@
 		<element type="Button">
 			<attribute name="Name" value="__DIVIDER__" />
 			<attribute name="Position" value="0 196" />
-			<attribute name="Size" value="1069 4" />
+			<attribute name="Size" value="751 4" />
 			<attribute name="Pivot" value="0 0" />
 			<attribute name="Priority" value="1000" />
 			<attribute name="Color" value="0.07 0.07 0.07 1" />
@@ -282,7 +349,7 @@
 			<attribute name="Bottom Right Color" value="0.07 0.07 0.07 1" />
 			<element type="BorderImage">
 				<attribute name="Name" value="DividerViz" />
-				<attribute name="Position" value="1900 -16" />
+				<attribute name="Position" value="1898 -16" />
 				<attribute name="Size" value="32 32" />
 				<attribute name="Pivot" value="0 0" />
 				<attribute name="Color" value="0.35 0.35 0.35 0.35" />
@@ -299,7 +366,7 @@
 	</element>
 	<element type="Button">
 		<attribute name="Name" value="__DIVIDER__" />
-		<attribute name="Position" value="929 0" />
+		<attribute name="Position" value="1247 0" />
 		<attribute name="Size" value="4 1008" />
 		<attribute name="Pivot" value="0 0" />
 		<attribute name="Priority" value="1000" />
@@ -310,7 +377,7 @@
 		<attribute name="Bottom Right Color" value="0.07 0.07 0.07 1" />
 		<element type="BorderImage">
 			<attribute name="Name" value="DividerViz" />
-			<attribute name="Position" value="-16 711" />
+			<attribute name="Position" value="-16 213" />
 			<attribute name="Size" value="32 32" />
 			<attribute name="Pivot" value="0 0" />
 			<attribute name="Color" value="0.35 0.35 0.35 0.35" />
