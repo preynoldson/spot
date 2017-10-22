@@ -1,0 +1,107 @@
+﻿<Window x:Class="SpotDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotDemo"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        Title="Spot" Height="350" Width="525" MinHeight="350" MinWidth="500">
+    <Window.Resources>
+        <Style x:Key="typicalButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="#FF404040"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#FF606060"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#FF606060" Offset="1.0"/>
+                                <GradientStop Color="#FF8B8B8B" Offset="0.0"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="BorderBrush">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#FF606060" Offset="1.0"/>
+                                <GradientStop Color="#FF8B8B8B" Offset="0.0"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Border MouseLeftButtonDown="UIElement_OnMouseLeftButtonDown">
+        <Grid>
+            <!--Main Background-->
+            <Rectangle Fill="WhiteSmoke" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0"/>
+            <Rectangle Fill="#FF404040" Width="1" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="0"/>
+            <Rectangle Fill="#FF404040" Width="1" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0"/>
+            <Rectangle Fill="#FF404040" Height="1" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0"/>
+            <Rectangle Fill="#FF404040" Height="15" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="0,0,0,0"/>
+
+            <Label Content="Spot" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FF404040" FontFamily="Arial" FontWeight="Bold"/>
+            <Label Content="Select View:" HorizontalAlignment="Right" Margin="0,40,50,0" VerticalAlignment="Top" Foreground="#FF404040" FontFamily="Arial" />
+            <ComboBox Name="viewComboBox" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,65,11,0" Width="115" SelectionChanged="ViewComboBox_OnSelectionChanged"/>
+            <StackPanel HorizontalAlignment="Right" Height="80" Margin="0,92,26,0" VerticalAlignment="Top" Width="100">
+                <RadioButton Name="photoRadioButton" GroupName="viewGroup" Content="Photo" Checked="photoRadioButton_Checked" IsChecked="True"/>
+                <RadioButton Name="modelRadioButton" GroupName="viewGroup" Content="Model" Checked="modelRadioButton_Checked"/>
+                <RadioButton Name="photoEdgesRadioButton" GroupName="viewGroup" Content="Photo Edges" Checked="photoEdgesRadioButton_Checked"/>
+                <RadioButton Name="modelEdgesRadioButton" GroupName="viewGroup" Content="Model Edges" Checked="modelEdgesRadioButton_Checked"/>
+                <RadioButton Name="comparisonRadioButton" GroupName="viewGroup" Content="Comparison" Checked="comparisonRadioButton_Checked"/>
+            </StackPanel>
+
+            <!--Buttons-->
+            <Button x:Name="closeButton" Click="CloseButton_OnClick" Style="{StaticResource typicalButtonStyle}" MouseEnter="CloseButton_OnMouseEnter" MouseLeave="CloseButton_OnMouseLeave"
+                    HorizontalAlignment="Right" Width="80" Height="30" VerticalAlignment="Bottom" Margin="0,0,1,15">
+                <Button.Content>
+                    <Grid Width="80" Height="30">
+                        <Rectangle x:Name="closeButtonRect" Fill="Transparent"/>
+                        <TextBlock Text="Close" TextAlignment="Center"/>
+                    </Grid>
+                </Button.Content>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter Margin="{TemplateBinding Control.Padding}"
+                                          HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                                          SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"
+                                          ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                                          RecognizesAccessKey="True"
+                                          Content="{TemplateBinding ContentControl.Content}"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="exportButton" Click="ExportButton_OnClick" Style="{StaticResource typicalButtonStyle}" MouseEnter="ExportButton_OnMouseEnter" MouseLeave="ExportButton_OnMouseLeave"
+                    HorizontalAlignment="Right" Width="80" Height="30" VerticalAlignment="Bottom" Margin="0,0,1,45">
+                <Button.Content>
+                    <Grid Width="80" Height="30">
+                        <Rectangle x:Name="exportRect" Fill="Transparent"/>
+                        <TextBlock Text="Export" TextAlignment="Center"/>
+                    </Grid>
+                </Button.Content>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter Margin="{TemplateBinding Control.Padding}"
+                                          HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                                          SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"
+                                          ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                                          RecognizesAccessKey="True"
+                                          Content="{TemplateBinding ContentControl.Content}"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Rectangle Fill="Transparent" StrokeThickness="1" Stroke="Black" HorizontalAlignment="Stretch" Margin="10,40,140,20" VerticalAlignment="Stretch" />
+            <Image Name="imageBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="11,41,141,21"/>
+        </Grid>
+    </Border>
+</Window>
